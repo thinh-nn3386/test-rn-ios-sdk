@@ -1,0 +1,30 @@
+{
+  "name": "RNSDK",
+  "module_name": "RNSDK",
+  "version": "1.1.14",
+  "summary": "Description of RNSDK",
+  "license": "MIT",
+  "authors": "thinh nguyen",
+  "homepage": "https://github.com/thinh-nn3386/react-native-sdk-example#readme",
+  "source": {
+    "git": "git@github.com:thinh-nn3386/react-native-sdk-example.git"
+  },
+  "vendored_frameworks": "Frameworks/*",
+  "resource_bundles": {
+    "RNSDK": [
+      "Rescources/*"
+    ]
+  },
+  "libraries": "c++",
+  "xcconfig": {
+    "CLANG_CXX_LANGUAGE_STANDARD": "c++11",
+    "CLANG_CXX_LIBRARY": "libc++"
+  },
+  "platforms": {
+    "osx": null,
+    "ios": null,
+    "tvos": null,
+    "visionos": null,
+    "watchos": null
+  }
+}

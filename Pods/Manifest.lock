@@ -1,0 +1,16 @@
+PODS:
+  - RNSDK (1.1.14)
+
+DEPENDENCIES:
+  - RNSDK (from `/Users/thinhnn/Desktop/RNSDKExample/ios/SDKOutput/`)
+
+EXTERNAL SOURCES:
+  RNSDK:
+    :path: "/Users/thinhnn/Desktop/RNSDKExample/ios/SDKOutput/"
+
+SPEC CHECKSUMS:
+  RNSDK: ff2ec0a6800081940259908a33e634393bff4bcb
+
+PODFILE CHECKSUM: 5137b998e77467a6c01a37abd393ff1af99c21b8
+
+COCOAPODS: 1.15.2
