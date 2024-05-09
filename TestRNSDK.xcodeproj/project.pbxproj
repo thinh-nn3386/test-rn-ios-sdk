@@ -13,7 +13,9 @@
 		7C61C1632BE9F1CA009DF869 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C61C1612BE9F1CA009DF869 /* Main.storyboard */; };
 		7C61C1652BE9F1CC009DF869 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C61C1642BE9F1CC009DF869 /* Assets.xcassets */; };
 		7C61C1682BE9F1CC009DF869 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C61C1662BE9F1CC009DF869 /* LaunchScreen.storyboard */; };
-		7CFE9A502BEB5A9C0076E3B4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CFE9A4F2BEB5A9C0076E3B4 /* SceneDelegate.swift */; };
+		7CFE9A7C2BECB50E0076E3B4 /* RCTTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CFE9A7B2BECB50E0076E3B4 /* RCTTest.m */; };
+		7CFE9A7E2BECB5310076E3B4 /* RCTTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CFE9A7D2BECB5310076E3B4 /* RCTTest.swift */; };
+		7CFE9AAA2BECBEB80076E3B4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CFE9AA92BECBEB80076E3B4 /* SceneDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,7 +29,10 @@
 		7C61C1692BE9F1CC009DF869 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7C61C16F2BE9F836009DF869 /* RNSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = RNSDK.xcframework; path = Pods/RNSDK/Frameworks/RNSDK.xcframework; sourceTree = "<group>"; };
 		7C61C1732BEA10A4009DF869 /* reacthermes.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = reacthermes.xcframework; path = Pods/RNSDK/Frameworks/reacthermes.xcframework; sourceTree = "<group>"; };
-		7CFE9A4F2BEB5A9C0076E3B4 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SceneDelegate.swift; path = ../../../.Trash/SceneDelegate.swift; sourceTree = "<group>"; };
+		7CFE9A7A2BECB50E0076E3B4 /* TestRNSDK-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TestRNSDK-Bridging-Header.h"; sourceTree = "<group>"; };
+		7CFE9A7B2BECB50E0076E3B4 /* RCTTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RCTTest.m; sourceTree = "<group>"; };
+		7CFE9A7D2BECB5310076E3B4 /* RCTTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RCTTest.swift; sourceTree = "<group>"; };
+		7CFE9AA92BECBEB80076E3B4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		7F18D2FC09479988365733BE /* Pods_TestRNSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestRNSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1167507EAEA223A10E764D4 /* Pods-TestRNSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestRNSDK.release.xcconfig"; path = "Target Support Files/Pods-TestRNSDK/Pods-TestRNSDK.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -75,12 +80,15 @@
 			isa = PBXGroup;
 			children = (
 				7C61C15B2BE9F1CA009DF869 /* AppDelegate.swift */,
-				7CFE9A4F2BEB5A9C0076E3B4 /* SceneDelegate.swift */,
+				7CFE9AA92BECBEB80076E3B4 /* SceneDelegate.swift */,
 				7C61C15F2BE9F1CA009DF869 /* ViewController.swift */,
 				7C61C1612BE9F1CA009DF869 /* Main.storyboard */,
 				7C61C1642BE9F1CC009DF869 /* Assets.xcassets */,
 				7C61C1662BE9F1CC009DF869 /* LaunchScreen.storyboard */,
 				7C61C1692BE9F1CC009DF869 /* Info.plist */,
+				7CFE9A7B2BECB50E0076E3B4 /* RCTTest.m */,
+				7CFE9A7A2BECB50E0076E3B4 /* TestRNSDK-Bridging-Header.h */,
+				7CFE9A7D2BECB5310076E3B4 /* RCTTest.swift */,
 			);
 			path = TestRNSDK;
 			sourceTree = "<group>";
@@ -130,6 +138,7 @@
 				TargetAttributes = {
 					7C61C1572BE9F1CA009DF869 = {
 						CreatedOnToolsVersion = 15.0;
+						LastSwiftMigration = 1500;
 					};
 				};
 			};
@@ -229,8 +238,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				7C61C1602BE9F1CA009DF869 /* ViewController.swift in Sources */,
+				7CFE9AAA2BECBEB80076E3B4 /* SceneDelegate.swift in Sources */,
+				7CFE9A7C2BECB50E0076E3B4 /* RCTTest.m in Sources */,
 				7C61C15C2BE9F1CA009DF869 /* AppDelegate.swift in Sources */,
-				7CFE9A502BEB5A9C0076E3B4 /* SceneDelegate.swift in Sources */,
+				7CFE9A7E2BECB5310076E3B4 /* RCTTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -381,6 +392,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = FKP7RQGFMX;
@@ -400,6 +412,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.TestRNSDK;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "TestRNSDK/TestRNSDK-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -411,6 +425,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = FKP7RQGFMX;
@@ -430,6 +445,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.TestRNSDK;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "TestRNSDK/TestRNSDK-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
